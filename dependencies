@@ -1,0 +1,5 @@
+
+pip install typing_extensions
+pip install openpyxl
+
+pip install gsheetsdb
