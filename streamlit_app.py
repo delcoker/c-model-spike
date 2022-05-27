@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import datetime as dt
-import streamlit as st
+import streamlit_app as st
 
 from google.oauth2 import service_account
 from gsheetsdb import connect
