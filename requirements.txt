@@ -1,0 +1,11 @@
+pandas~=1.4.2
+numpy~=1.22.4
+streamlit~=1.9.2
+gsheetsdb~=0.1.13.1
+typing_extensions
+openpyxl
+gsheetsdb
+matplotlib
+altair~=4.2.0
+scikit-learn~=1.1.1
+python-dateutil~=2.8.2

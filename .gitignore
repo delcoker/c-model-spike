@@ -5,3 +5,5 @@
 .streamlit/
 
 CMODEL NEW TEST.xlsx
+
+__pycache__/
