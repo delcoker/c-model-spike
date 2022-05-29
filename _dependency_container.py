@@ -11,7 +11,7 @@ from dateutil.relativedelta import relativedelta
 pd.options.mode.chained_assignment = None  # default='warn'
 
 # constants
-logged_in = True
+logged_in = False
 current_year = dt.date.today().year
 number_of_years_data = 2
 fiscal_start_year = 'January'
