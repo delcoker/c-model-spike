@@ -34,6 +34,7 @@ def app():
 
     if submit_button and password == 'del':
         st.success(f"Welcome {username}")
+        print(username + "->" + str(datetime.now()))
 
         if gc:
             # Create a column
