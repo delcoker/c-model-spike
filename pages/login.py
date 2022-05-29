@@ -6,6 +6,7 @@ import pygsheets
 import streamlit as st
 
 # authorization
+gc = None
 try:
     gc = pygsheets.authorize(service_account_env_var='GDRIVE_API_CREDENTIALS')
     st.info("Got GC")
