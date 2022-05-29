@@ -9,8 +9,12 @@ import streamlit as st
 try:
     gc = pygsheets.authorize(service_account_env_var='GDRIVE_API_CREDENTIALS')
     st.info("Got GC")
-except:
+except Exception:
+    pass
+try:
     gc = pygsheets.authorize(service_file='C:/Users/delco/Downloads/c-model-test-d0c7fbbcfbff.json')
+except Exception:
+    pass
 
 # Create empty dataframe
 df = pd.DataFrame()
