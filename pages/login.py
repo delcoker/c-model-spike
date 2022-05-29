@@ -6,7 +6,7 @@ import pygsheets
 import streamlit as st
 
 # authorization
-gc = pygsheets.authorize(service_file='C:/Users/delco/Downloads/c-model-test-d0c7fbbcfbff.json')
+gc = pygsheets.authorize(service_file='c-model-test-d0c7fbbcfbff.json')
 
 # Create empty dataframe
 df = pd.DataFrame()
