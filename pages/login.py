@@ -14,5 +14,6 @@ def app():
         var1.empty()
 
         return True
+    else:
 
-    return False
+        return False

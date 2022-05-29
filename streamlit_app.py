@@ -19,10 +19,15 @@ if _dependency_container.logged_in:
 
     st.markdown('''C-Model''')
 
-    app.add_app("Data", data.app)
-    app.add_app("Info", info.app)
-    app.add_app("Linear Regression Model", linear_model.app)
-    # app.add_app("Prophet", prophet_model.app)
-    app.add_app("C-Model", c_model.app)
+    with var1.form(key='logout'):
+        submit_button = st.form_submit_button(label="Log Out")
+        if submit_button:
+            _dependency_container.logged_in = False
+
+        app.add_app("Data", data.app)
+        app.add_app("Info", info.app)
+        app.add_app("Linear Regression Model", linear_model.app)
+        # app.add_app("Prophet", prophet_model.app)
+        app.add_app("C-Model", c_model.app)
 
     app.run()
